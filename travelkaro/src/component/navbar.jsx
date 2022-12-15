@@ -1,6 +1,7 @@
 import "../styles/navbar.css"
 
 import MoreTravel from "../modals/MoreTravel"
+import SignInModal from "../modals/signInModal"
 
 export default function Navbar(){
      return (
@@ -15,7 +16,7 @@ export default function Navbar(){
               <p>List Your Property</p>
               <p>Support</p>
               <p>Trips</p>
-              <p>Sign In</p>
+              <SignInModal/>
           </div>
         </div>
      ) 
