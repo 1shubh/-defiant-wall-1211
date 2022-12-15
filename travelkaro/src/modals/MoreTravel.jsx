@@ -3,36 +3,21 @@ import {
     MenuButton,
     MenuList,
     MenuItem,
-    MenuItemOption,
-    MenuGroup,
-    MenuOptionGroup,
-    MenuDivider,
-    color,
   } from '@chakra-ui/react'
-  import {Image,Button} from "@chakra-ui/react"
-  import { useDisclosure } from '@chakra-ui/react'
-  import { useState } from "react"
   import { FaHotel,FaCarAlt,FaPlaneDeparture,FaTicketAlt,FaGlobeAsia } from "react-icons/fa"
-  import { BiBus } from "react-icons/bi"
+  
 
 
   function MoreTravel(){
-    // const { isOpen, onOpen, onClose } = useDisclosure()
-    //  const [size,setSize] = useState("xs")
-
-    //  const handleOpen = (size) => {
-    //       onOpen()
-    //  }
     const iconStyle = {
         fontSize:"20px"
     }
-
       return <>    
  <Menu>
     <MenuButton>
        <p id='menueTitle'>More Travel &#709;</p> 
     </MenuButton>
-  <MenuList>
+  <MenuList width={"300px"} boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px">
     <MenuItem minH='48px' fontFamily="sans-serif">
         <div id='menuDiv'>
            <FaHotel style={iconStyle}/>

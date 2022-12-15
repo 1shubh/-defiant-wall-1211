@@ -1,5 +1,5 @@
 .navbar{
-    border: 1px solid black;
+    border: 0px solid black;
     background-color:#0a438b;
     height: 70px;
     display: flex;
@@ -59,4 +59,7 @@
 }
 #menuDiv:hover{
    color:#1859a9;
+}
+#popOverSignin{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
