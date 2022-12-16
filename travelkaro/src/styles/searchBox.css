@@ -1,6 +1,9 @@
 #searchBox{
-    border: 0px solid black;
+    border: 0px solid white;
     height: 200px;
+}
+#searchInput::placeholder{
+    color: white;
 }
 #homeVideo>img{
     width: 100%;
@@ -9,14 +12,14 @@
     position: relative;
 }
 #searchBar{
-    border: 0px solid black;
-    background-color: white;
+    border: 2px solid white;
+    background-color: transparent;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 20px;
     height: 200px;
     width: 80%;
     position: absolute;
-    top: 145%;
+    top: 10%;
     left: 10%;
     align-items: center;
     padding: 20px;
@@ -31,10 +34,11 @@
     justify-content: space-around;
 }
 #numberOfPerson{
-    border: 1px solid black;
+    border: 2px solid white;
     width: 20%;
     border-radius: 10px;
 }
+
 #numberOfPerson:hover{
     border: 2px solid rgb(73, 73, 229);
 }
@@ -46,3 +50,97 @@
     text-align: center;
     margin-top: 20px;
 }
+#gridImg{
+   filter:brightness(60%);
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   cursor: pointer;
+}
+#gridImg2{
+    filter:brightness(60%);
+    border-radius: 10px;
+    cursor: pointer; 
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px
+}
+#gridImg3{
+    filter:brightness(60%);
+    border-radius: 10px;
+    cursor: pointer; 
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+}
+#gridImg:hover,#gridImg2:hover,#gridImg3:hover{
+    filter:brightness(80%)
+}
+#gridtext{
+    font-size: 12px;
+    padding: 5px;
+}
+#gridItem{
+    border: 0px solid black;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#imgText{
+    color:white;
+    position: absolute;
+    top: 64%;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px black;
+}
+#imgText2{
+    font-size: 25px; 
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+}
+#imgText3{
+    width: 95%;
+    border: 0px solid white;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 2.5%;
+    text-align: center;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-shadow: 2px 2px black;
+}
+#imgDiv{
+    position: absolute;
+    bottom: 45%;
+    left: 10%;
+}
+.imgpTag{
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+#imgDiv2{
+    position: relative;
+    bottom: 25%;
+    left: 3%;
+}
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 35.25%;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    border: 0px solid black;
+}
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }

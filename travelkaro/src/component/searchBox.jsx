@@ -12,15 +12,15 @@ export default function SearchBox(){
             </video>
         </div>
         <div id="searchBar">
-            <Text fontSize='md' marginLeft={"60px"}>Search Hotels</Text>
+            <Text fontSize='md' color={"white"} marginLeft={"60px"}>Search Hotels</Text>
             <hr style={{width:"90%",margin:"auto"}} />
             <div className="searchBar">
                   <InputGroup w={"40%"}>
-                  <InputLeftElement pointerEvents='none' children={<FaMapMarkerAlt color='black.300'/>}/>
-                  <Input border={"1px solid black"} type='search' placeholder='Going To'/>
+                  <InputLeftElement pointerEvents='none' children={<FaMapMarkerAlt color='white'/>}/>
+                  <Input id="searchInput" border={"1px solid black"} borderColor={"white"} type='search' color={"white"} placeholder='Going To'/>
                  </InputGroup>
-                 <span>CheckIn</span><Input placeholder="Select CheckIn Date" size="md" type="date" width={"10%"}/>
-                 <span>CheckIn</span><Input placeholder="Select Checkout Date" size="md" type="date" width={"10%"}/>
+                 <span style={{color:"white"}}>CheckIn</span><Input cursor={"pointer"} borderColor={"white"} color="white" placeholder="Select CheckIn Date" size="md" type="date" width={"10%"}/>
+                 <span style={{color:"white"}}>CheckIn</span><Input cursor={"pointer"} borderColor={"white"} color="white" placeholder="Select Checkout Date" size="md" type="date" width={"10%"}/>
                  <NumberOfPerson/>
             </div>
             <div className="searchBtn">
