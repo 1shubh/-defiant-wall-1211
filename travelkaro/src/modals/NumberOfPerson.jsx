@@ -28,12 +28,14 @@ export default function NumberOfPerson(){
     return <div id="numberOfPerson">
         <Popover>
              <PopoverTrigger>
-                     <div id="boxPerson" style={{display:"flex",
+                     <div className="boxPerson" style={{display:"flex",
                                                  justifyContent: "space-around",
                                                  padding: "8px",
                                                  alignItems: "center",
-                                                 cursor: "pointer"}}>
-                         <FaUser/>
+                                                 cursor: "pointer",
+                                                 color:"white"
+                                                 }}>
+                         <FaUser color="white"/>
                          <p>{adult} Adult</p>
                          <p>{Child} Child</p>
                      </div>
@@ -58,8 +60,7 @@ export default function NumberOfPerson(){
                           <Text width={5} textAlign={"center"}>{Child}</Text>
                           <Button borderRadius={10} fontSize={"20px"} textAlign={"center"} onClick={()=>handleClickChild(1)}>+</Button>
                     </div>
-                </div>
-                
+                </div> 
               </PopoverBody>
          </PopoverContent>
 </Popover>

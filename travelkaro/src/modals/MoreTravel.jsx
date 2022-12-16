@@ -5,8 +5,6 @@ import {
     MenuItem,
   } from '@chakra-ui/react'
   import { FaHotel,FaCarAlt,FaPlaneDeparture,FaTicketAlt,FaGlobeAsia } from "react-icons/fa"
-  
-
 
   function MoreTravel(){
     const iconStyle = {
