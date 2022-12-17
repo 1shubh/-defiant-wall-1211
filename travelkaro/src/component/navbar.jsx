@@ -16,7 +16,6 @@ export default function Navbar(){
               <p>List Your Property</p>
               <p>Support</p>
               <p>Trips</p>
-         
               <SignInModal/>
           </div>
         </div>
