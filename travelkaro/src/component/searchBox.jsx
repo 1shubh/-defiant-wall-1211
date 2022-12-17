@@ -1,9 +1,14 @@
 import "../styles/searchBox.css"
-import { Input,InputGroup,InputLeftElement,Text,Button} from '@chakra-ui/react'
+import { Input,InputGroup,InputLeftElement,Text,Button,Link} from '@chakra-ui/react'
 import NumberOfPerson from "../modals/NumberOfPerson";
-
+import { useNavigate } from "react-router-dom"
 import { FaMapMarkerAlt } from "react-icons/fa";
+
+
+
 export default function SearchBox(){
+    let navigate = useNavigate()
+     
     return <div id="searchBox">
         <div id="homeVideo">
             {/* <img src="https://images.pexels.com/photos/4655770/pexels-photo-4655770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" /> */}
@@ -24,7 +29,7 @@ export default function SearchBox(){
                  <NumberOfPerson/>
             </div>
             <div className="searchBtn">
-               <Button colorScheme='blue' w={"100%"}>Search</Button>
+              <Button colorScheme='blue' w={"100%"} onClick={()=>navigate("searchresult")}>Search</Button>
             </div>
         </div>
     </div>

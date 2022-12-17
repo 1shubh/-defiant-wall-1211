@@ -11,6 +11,9 @@ import {
     Button,
     Portal
   } from '@chakra-ui/react'
+  import { Link } from 'react-router-dom'
+ 
+  
 
 
 export default function SignInModal(){
@@ -26,8 +29,8 @@ export default function SignInModal(){
                         <PopoverHeader fontFamily={"sans-serif"} fontWeight="bold" fontSize={17}>Members can access discounts and special features</PopoverHeader>
                     {/* <PopoverCloseButton /> */}
                     <PopoverBody textAlign={"center"} display="grid" gap={"5"}>
-                      <Button color={"white"} bgColor={"rgb(14,91,185)"}>Sign In</Button>
-                      <p style={{color:"#0e5bb9",cursor:"pointer"}}>Create Free Account</p>
+                      <Link to="/signin"><Button width={80} color={"white"} bgColor={"rgb(14,91,185)"}>Sign In</Button></Link>
+                      <Link to="/signup"><p style={{color:"#0e5bb9",cursor:"pointer"}}>Create Free Account</p></Link>
                     </PopoverBody>
                     <PopoverFooter cursor={"pointer"}>Feedback</PopoverFooter>
                   </PopoverContent>
