@@ -12,10 +12,7 @@ import {
     Portal
   } from '@chakra-ui/react'
   import { Link } from 'react-router-dom'
- 
   
-
-
 export default function SignInModal(){
     return (
         <>

@@ -14,10 +14,11 @@ import {
     PopoverAnchor,
   } from '@chakra-ui/react'
 
-export default function NumberOfPerson(){
-    const {onClose} = useDisclosure()
-    const [adult,SetAdult] = useState(1)
-    const [Child,setChild] = useState(0)
+export default function NumberOfPerson(prop){
+    
+     const {adult,SetAdult,Child,setChild} = prop
+    // const [adult,SetAdult] = useState(1)
+    // const [Child,setChild] = useState(0)
 
     const handleClickAdult = (value) => {
            SetAdult(adult+value)
@@ -25,6 +26,7 @@ export default function NumberOfPerson(){
     const handleClickChild = (value) => {
         setChild(Child+value)
     }
+    
     return <div id="numberOfPerson">
         <Popover>
              <PopoverTrigger>
@@ -36,8 +38,8 @@ export default function NumberOfPerson(){
                                                  color:"white"
                                                  }}>
                          <FaUser color="white"/>
-                         <p>{adult} Adult</p>
-                         <p>{Child} Child</p>
+                         <p value="adult">{adult} Adult</p>
+                         <p value="child">{Child} Child</p>
                      </div>
              </PopoverTrigger>
          <PopoverContent>

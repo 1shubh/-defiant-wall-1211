@@ -10,7 +10,6 @@ const Home = () => {
         <Navbar/>
         <SearchBox/>
         <Imagecard/>
-        <LargeWithLogoCentered/>
     </div>
   )
 }
