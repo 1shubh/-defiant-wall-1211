@@ -33,14 +33,14 @@ import Loader from "../component/Loader";
 
 const dataLS = JSON.parse(localStorage.getItem("searchQuery")) 
 
-  export default function SingleHotel() {
+  export default function SingleHotelDubai() {
    const {id} = useParams();
    const [data,setData] = useState({})
    const [loading,setLoading] = useState(false)
    
    useEffect(()=>{
     setLoading(true)
-    axios.get(`https://bookitserver.onrender.com/delhi/${id}`).then((res)=>{
+    axios.get(`https://bookitserver.onrender.com/dubai/${id}`).then((res)=>{
         setData(res.data)
       setLoading(false)
     }).catch((err)=>{

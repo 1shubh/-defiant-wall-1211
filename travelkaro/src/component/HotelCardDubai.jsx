@@ -3,11 +3,11 @@ import {Box,Flex,Image,Heading,Text,Grid, Stack, GridItem,Button} from "@chakra-
 import {Link as RouterLink} from "react-router-dom"
 
 
-const HotelCard = (prop) => {
+const HotelCardDubai = (prop) => {
     const {image1,city,name,rating,review,price,price2,review1,id} = prop
   return (
     <Box style={{border:"0px solid black",borderRadius:"10px",boxShadow:"rgba(0, 0, 0, 0.24) 0px 3px 8px",cursor:"pointer"}} w="80%" margin={"auto"} height="fit-content">
-        <RouterLink to={`/searchresult/${id}`}>
+        <RouterLink to={`/searchresultDubai/${id}`}>
         <Flex justifyContent={"space-between"}>
            <Box border={"0px solid red"}>
               <Image borderTopLeftRadius={"10px"} borderBottomLeftRadius="10px" w={"100%"} src={image1}/>
@@ -33,4 +33,4 @@ const HotelCard = (prop) => {
   )
 }
 
-export default HotelCard
+export default HotelCardDubai
