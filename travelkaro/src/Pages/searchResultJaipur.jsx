@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../component/navbar'
 import {Box, Flex,Heading,Text,Select,Grid} from "@chakra-ui/react"
 import HotelCard from "../component/HotelCard"
-import HotelItem from '../component/hotelItem'
+import HotelItemJaipur from '../component/HotelItemJaipur'
 import Loader from '../component/Loader'
 import Pagination from '../component/Pagination'
 
@@ -11,10 +11,10 @@ console.log(data)
 
 
 const getProd = (page,limit,sort="asc",filter) => {
-  return fetch(`https://bookit-com-deploye.onrender.com/delhi?_sort=price2&_order=${sort}&_page=${page}&_limit=${limit}&review1=${filter}`)
+  return fetch(`https://bookit-com-deploye.onrender.com/jaipur?_sort=price2&_order=${sort}&_page=${page}&_limit=${limit}&review1=${filter}`)
   .then((res)=>res.json())
 }
-const SearchResult = () => {
+const SearchResultJaipur = () => {
   // const [city,setCity] = useState()
   const [searchData,setData] = useState([])
   const [loading,setLoading] = useState(false)
@@ -51,7 +51,7 @@ const SearchResult = () => {
 
       <Box w={"80%"} border="0px solid black" margin={"auto"}>
         <Box margin="auto" marginTop={20}> 
-          <Heading>Searched Results For Delhi</Heading>
+          <Heading>Searched Results For Jaipur</Heading>
         </Box>
         <Flex marginTop="50px" gap={10}>
         <Grid border={"0px solid black"} gap={"50px"} w={"20%"} h="fit-content">
@@ -72,7 +72,7 @@ const SearchResult = () => {
             </Select>
         </Grid>
           <Grid border={"0px solid blue"} w="80%" gap={"20px"}>
-            {loading ? <Loader/> : <HotelItem hotel={searchData && searchData} />}
+            {loading ? <Loader/> : <HotelItemJaipur hotel={searchData && searchData} />}
           </Grid>
         </Flex>
        </Box>
@@ -81,4 +81,4 @@ const SearchResult = () => {
   )
 }
 
-export default SearchResult
+export default SearchResultJaipur

@@ -4,6 +4,7 @@ import NumberOfPerson from "../modals/NumberOfPerson";
 import { useNavigate } from "react-router-dom"
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { useReducer, useState } from "react";
+import SearchModal from "../modals/searchModal";
 
 
 let initalValue = {
@@ -37,10 +38,20 @@ export default function SearchBox(){
         adult : adult,
         child : Child,
     }
+    const searchval = document.getElementById("searchInput")
     const handlesearch = () => {
-       localStorage.setItem("searchQuery",JSON.stringify(data.search))
-
-       navigate("searchresult")
+       localStorage.setItem("searchQuery",JSON.stringify(data))
+       if(searchval.value==="delhi"){
+        navigate("searchresult")
+       }else if(searchval.value==="dubai"){
+        navigate("searchresultDubai")
+       }else if(searchval.value==="gurgaon"){
+        navigate("searchresultGurgaon")
+       }else if(searchval.value==="jaipur"){
+        navigate("searchresultJaipur")
+       }else{
+        alert("No Result Found")
+       }
     }
 
      
@@ -55,14 +66,15 @@ export default function SearchBox(){
             <Text fontSize='md' color={"white"} marginLeft={"60px"} >Search Hotels</Text>
             <hr style={{width:"90%",margin:"auto"}} />
             <div className="searchBar">
-                  <InputGroup w={"40%"}>
-                     <InputLeftElement pointerEvents='none' children={<FaMapMarkerAlt color='white'/>}/>
-                     <Input onChange={(e)=>dispatch({
+                  {/* <InputGroup w={"40%"}>
+                     <InputLeftElement pointerEvents='none' children={<FaMapMarkerAlt color='white'/>}/> */}
+                     {/* <Input onChange={(e)=>dispatch({
                         type:"UPDATE",
                         value:e.target.value,
                         key :"search"
-                     })} id="searchInput" border={"1px solid black"} borderColor={"white"} type='search' color={"white"} placeholder='Going To'/>
-                 </InputGroup>
+                     })} id="searchInput" border={"1px solid black"} borderColor={"white"} type='search' color={"white"} placeholder='Going To'/> */}
+                     <SearchModal dispatch={dispatch}/>
+                 {/* </InputGroup> */}
                      <span style={{color:"white"}}>CheckIn</span><Input onChange={(e)=>dispatch({
                         type:"UPDATE",
                         value:e.target.value,
