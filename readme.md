@@ -4,7 +4,7 @@ Travelcity.com is an american based Hotel and Flights Booking Website.
 So, the tech stack i have used to build this website is REACTJs and Chakra UI.
 
 <h2>Landing Page</h2>
-<h3>User Can Search Hotels in 4 cities => Delhi, Gurgaon, Dubai and Jaipur</h3>
+<h3>User Can Search Hotels of 4 cities => Delhi, Gurgaon, Dubai and Jaipur</h3>
 <img src="https://drive.google.com/uc?export=view&id=1q180PKNykuZ44HTR2D9o9G7h_Rye40HT" alt="landing page"/>
 
 Features I have added => 
